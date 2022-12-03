@@ -36,7 +36,7 @@ type Organization struct {
 type Account struct {
 	ID        string    `json:"id"`
 	FirstName string    `json:"first-name"`
-	LastName  string    `json:"last-name""`
+	LastName  string    `json:"last-name"`
 	Email     string    `json:"email"`
 	CreatedAt time.Time `json:"created-at"`
 }
