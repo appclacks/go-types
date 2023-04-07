@@ -127,7 +127,7 @@ type GetHealthcheckInput struct {
 }
 
 type ListHealthchecksInput struct {
-	NamePattern string `param:"name-pattern" description:"Returns all health checks whose names are matching this regular expression"`
+	NamePattern string `query:"name-pattern" description:"Returns all health checks whose names are matching this regular expression"`
 }
 
 type ListHealthchecksOutput struct {
