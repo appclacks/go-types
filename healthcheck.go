@@ -126,6 +126,10 @@ type GetHealthcheckInput struct {
 	ID string `param:"id" description:"Healthcheck ID" validate:"required,uuid"`
 }
 
+type ListHealthchecksInput struct {
+	NamePattern string `param:"name-pattern" description:"Returns all health checks whose names are matching this regular expression"`
+}
+
 type ListHealthchecksOutput struct {
 	Result []Healthcheck `json:"result"`
 }
