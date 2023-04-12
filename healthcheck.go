@@ -123,7 +123,8 @@ type DeleteHealthcheckInput struct {
 }
 
 type GetHealthcheckInput struct {
-	ID string `param:"id" description:"Healthcheck ID" validate:"required,uuid"`
+	Name string `param:"name" description:"Healthcheck Name"`
+	ID   string `param:"id" description:"Healthcheck ID" validate:"uuid"`
 }
 
 type ListHealthchecksInput struct {
