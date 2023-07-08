@@ -17,6 +17,7 @@ type HealthcheckHTTPDefinition struct {
 	Cert        string            `json:"cert,omitempty"`
 	Cacert      string            `json:"cacert,omitempty"`
 	Insecure    bool              `json:"insecure"`
+	ServerName  string            `json:"server-name"`
 }
 
 type CreateHTTPHealthcheckInput struct {
