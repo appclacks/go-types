@@ -31,6 +31,7 @@ type Organization struct {
 	Name        string    `json:"name"`
 	Description *string   `json:"description"`
 	CreatedAt   time.Time `json:"created-at"`
+	PricePlan   string    `json:"price-plan"`
 }
 
 type Account struct {
